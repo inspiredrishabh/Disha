@@ -53,7 +53,11 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+		fontFamily:{
+			'AbrilFatface': ['Abril Fatface', 'cursive'],
+			'TitilliumWeb': ['Titillium Web', 'cursive']
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
