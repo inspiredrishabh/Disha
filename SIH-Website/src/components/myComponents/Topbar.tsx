@@ -1,25 +1,23 @@
 import { ModeToggle } from "../mode-toggle";
-import { Button } from "../ui/button";
 import logo from "../../assets/logo.svg"
 import { useNavigate } from "react-router-dom";
 
-function TopbarLanding(){
+function Topbar(){
     const navigate = useNavigate();
     return(<>
-    <div className=" flex flex-row items-center justify-between">
+    <div className=" flex flex-row items-center justify-between hover:cursor-pointer" onClick={()=>{navigate('/landing')}}>
         <div className="flex flex-row items-center gap-4">
             <img src={logo} className="w-10"></img>
-            <div className="text-4xl font-thin font-AbrilFatface">Disha</div>
+            <div className="text-4xl font-thin font-AbrilFatface hover:cursor-pointer" onClick={()=>{navigate('/landing')}}>Disha</div>
         </div>
         
         <div className="flex flex-row justify-between w-1/6 items-center">
             <ModeToggle/>
-            <Button variant={"outline"} className="rounded-full py-6 px-6" onClick={()=>navigate('/signin')}> Log in</Button>
+
         </div>
         
     </div>
     </>)
 }
 
-export default TopbarLanding;
-
+export default Topbar;
