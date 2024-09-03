@@ -63,7 +63,7 @@ function Signin() {
           <div className="flex flex-col items-center gap-2">
             <h1 className="text-3xl font-bold">Sign in to your account</h1>
             <p className="text-gray-600 w-2/3 text-center text-xs md:text-base">
-              Get started with our financial dashboard today.
+              Get started with our educational dashboard today.
             </p>
           </div>
 

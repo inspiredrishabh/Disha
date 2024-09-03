@@ -17,24 +17,24 @@ function Landing() {
 
   return (
     <>
-      <div className="px-16 py-8">
+      <div className="px-4 md:px-16 py-8">
         <TopbarLanding />
       </div>
 
-      <div className="flex flex-row h-full w-screen justify-around items-center mb-48 mt-8">
-        <div className="flex flex-col w-1/2 px-12 gap-12 pt-10">
-          <div className="flex flex-row gap-4 items-center">
-            <p className="text-5xl font-TitilliumWeb font-bold tracking-wide">Ed-tech for</p>
-            <p className="text-5xl font-bold font-TitilliumWeb text-purple-600 tracking-wider">ALL</p>
+      <div className="flex flex-col-reverse md:flex-row h-full w-screen justify-around items-center mb-20 md:mb-48 mt-8">
+        <div className="flex flex-col w-full md:w-1/2 px-6 md:px-12 gap-6 md:gap-12 pt-10">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+            <p className="text-3xl md:text-5xl font-TitilliumWeb font-bold tracking-wide">Ed-tech for</p>
+            <p className="text-3xl md:text-5xl font-bold font-TitilliumWeb text-purple-600 tracking-wider">ALL</p>
           </div>
-          <p className="font-medium text-xl leading-relaxed font-TitilliumWeb">
-            Unlock a world of knowledge with free access to diverse educational resources, Al-powered summaries, and personalized private classrooms. Join us in making quality education accessible to everyone, everywhere.
+          <p className="font-medium text-lg md:text-xl leading-relaxed font-TitilliumWeb">
+            Unlock a world of knowledge with free access to diverse educational resources, AI-powered summaries, and personalized private classrooms. Join us in making quality education accessible to everyone, everywhere.
           </p>
-          <Button className="bg-purple-600 w-1/2 rounded-full py-6" onClick={() => navigate('/form')}>
+          <Button className="bg-purple-600 w-full md:w-1/2 rounded-full py-4 md:py-6" onClick={() => navigate('/form')}>
             Get Started
           </Button>
         </div>
-        <div className="w-1/2 pr-2">
+        <div className="w-full md:w-1/2 pr-2">
           <img src={landing} className="w-full" alt="Landing" />
         </div>
       </div>
@@ -44,7 +44,7 @@ function Landing() {
         content={
           <SectionContent
             items={[
-              { title: "Comprehensive Access:", description: "All educational content sorted into categories and subcategories including official test" },
+              { title: "Comprehensive Access:", description: "All educational content sorted into categories and subcategories including official tests." },
               { title: "Multi-Platform Availability:", description: "Accessible on web, mobile, and tablets." }
             ]}
           />
@@ -57,9 +57,9 @@ function Landing() {
         content={
           <SectionContent
             items={[
-              { title: "Al Summaries, Quizzes, and Daily Problems:", description: "Enhance learning with Al-generated content from PDFs and PPTs." },
+              { title: "AI Summaries, Quizzes, and Daily Problems:", description: "Enhance learning with AI-generated content from PDFs and PPTs." },
               { title: "Gesture Writing:", description: "Enable interactive learning through gesture-based writing." },
-              { title: "AI Authentication:", description: "Secure video authentication with Al for authorized access." }
+              { title: "AI Authentication:", description: "Secure video authentication with AI for authorized access." }
             ]}
           />
         }
