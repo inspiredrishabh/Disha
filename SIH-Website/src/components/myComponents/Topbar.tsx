@@ -8,7 +8,7 @@ function Topbar(){
     <div className=" flex flex-row items-center justify-between hover:cursor-pointer" onClick={()=>{navigate('/landing')}}>
         <div className="flex flex-row items-center gap-4">
             <img src={logo} className="w-10"></img>
-            <div className="text-4xl font-thin font-AbrilFatface hover:cursor-pointer" onClick={()=>{navigate('/landing')}}>Disha</div>
+            <div className="text-3xl text-purple-600 font-bold font-Montserrat hover:cursor-pointer" onClick={()=>{navigate('/landing')}}>DISHA</div>
         </div>
         
         <div className="flex flex-row justify-between w-1/6 items-center">

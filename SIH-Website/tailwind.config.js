@@ -56,7 +56,9 @@ export default {
   		},
 		fontFamily:{
 			'AbrilFatface': ['Abril Fatface', 'cursive'],
-			'TitilliumWeb': ['Titillium Web', 'cursive']
+			'TitilliumWeb': ['Titillium Web', 'cursive'],
+			'Roboto': ['Roboto'],
+			'Montserrat': ['Montserrat']
 		}
   	}
   },
