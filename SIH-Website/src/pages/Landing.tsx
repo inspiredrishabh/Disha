@@ -1,5 +1,5 @@
 import TopbarLanding from "@/components/myComponents/TopbarLanding"
-import landing from "../assets/landing.png"
+import landing from "../assets/landing.svg"
 import { Button } from "@/components/ui/button"
 import ai from "../assets/AI.svg"
 import news from "../assets/news.svg"
