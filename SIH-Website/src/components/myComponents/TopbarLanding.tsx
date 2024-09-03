@@ -10,10 +10,9 @@ function TopbarLanding(){
             <img src={logo} className="w-10"></img>
             <div className="text-3xl text-purple-600 font-bold font-Montserrat">DISHA</div>
         </div>
+    
+            <Button variant={"outline"} className="rounded-full py-6 px-6 " onClick={()=>navigate('/signin')}> Log in</Button>
         
-        <div className="flex flex-row justify-between w-1/6 items-center">
-            <Button variant={"outline"} className="rounded-full py-6 px-6" onClick={()=>navigate('/signin')}> Log in</Button>
-        </div>
         
     </div>
     </>)

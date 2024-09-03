@@ -1,6 +1,6 @@
 import './App.css'
 import { ThemeProvider } from './components/theme-provider'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { RecoilRoot } from 'recoil';
 import Landing from './pages/Landing';
 import Form from './pages/Form';
@@ -16,6 +16,7 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Navigate to="/landing" replace />} />
           <Route path='/landing' element={<Landing/>}/>
           <Route path='/form' element={<Form/>}/>
           <Route path='/signup' element={<Signup/>}/>

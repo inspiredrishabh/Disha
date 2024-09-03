@@ -14,7 +14,7 @@ const SectionLayout: React.FC<SectionLayoutProps> = ({ header, content, imageSrc
         {header}
         {content}
       </div>
-      <div className="w-full md:w-1/3 md:pr-2 mt-6 md:mt-0">
+      <div className="w-full md:w-1/3 mt-6 md:mt-0">
         <img src={imageSrc} className="w-full" alt="" />
       </div>
     </div>

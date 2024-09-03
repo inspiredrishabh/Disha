@@ -34,7 +34,7 @@ function Landing() {
             Get Started
           </Button>
         </div>
-        <div className="w-full md:w-1/2 pr-2">
+        <div className="w-full md:w-1/2">
           <img src={landing} className="w-full" alt="Landing" />
         </div>
       </div>
